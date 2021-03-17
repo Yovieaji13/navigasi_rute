@@ -5,10 +5,10 @@ import 'item_page.dart';
 
 class HomePage extends StatelessWidget {
   final List<Item> items = [
-    Item(name: 'Tees Anchor', price: 125000, size: 'L'),
-    Item(name: 'Windbraker Hopeles', price: 350000, size: 'M'),
-    Item(name: 'Mesh Colleage', price: 110000, size: 'XL'),
-    Item(name: 'Bandana Trapped', price: 35000, size: '17x17 cm')
+    Item(name: 'Tees Anchor', price: 125000, size: 'L', qty: 100),
+    Item(name: 'Tees Basic', price: 350000, size: 'M', qty: 50),
+    Item(name: 'Tees Daisy', price: 110000, size: 'XL', qty: 200),
+    Item(name: 'Tees Ashed', price: 35000, size: 'M', qty: 1000)
   ];
 
   @override
@@ -39,21 +39,16 @@ class HomePage extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Text(item.name),
-                        ),
-                        Expanded(
-                          child: Container(
-                            child: Text(
-                              item.price.toString(),
-                            ),
+                          child: Text("Code : " + "\n\n" + item.name,
+                          textAlign: TextAlign.left,
                           ),
                         ),
                         Expanded(
                           child: Text(
-                            item.size,
+                            "Qty Stock : " + "\n\n" + item.qty.toString(),
                             textAlign: TextAlign.end,
                           ),
-                        ),
+                        )
                       ],
                     ),
                   ),
