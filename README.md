@@ -1,5 +1,11 @@
 # navigasi_rute
 
+Hasil Debug
+
+![screenshoot](/image/ui1.jpeg)
+
+![screenshoot](/image/ui2.jpeg)
+
 A new Flutter project.
 
 ## Getting Started
